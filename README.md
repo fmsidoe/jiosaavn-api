@@ -1,60 +1,64 @@
-# :musical_note: JioSaavn API
+# JioSaavn API
 
-An Unofficial JioSaavn API for downloading songs in 320kbps quality for free.
+![GitHub License](https://img.shields.io/github/license/sumitkolhe/jiosaavn-api)
+![GitHub Release](https://img.shields.io/github/v/release/sumitkolhe/jiosaavn-api)
 
-> NOTE: <https://saavn.dev> is only meant to demo the API and has rate-limiting enabled to minimise bandwidth consumption. It is recommended to deploy your own instance on vercel for personal use.
+An Unofficial API for downloading high-quality songs, albums, playlists, and more from [JioSaavn](https://jiosaavn.com).
 
-## :sparkles: Features
+## 📚 Documentation
 
-- :rocket: Blazing fast
-- :notes: Download High Quality Songs (320kbps).
-- :sunrise: Download High quality song/album thumbnails.
-- :mag_right: Search support for songs and albums.
-- :musical_score: Lyrics for supported songs.
-- :heart: Open-Source
-- :cloud: Lightweight and has minimal dependencies.
+Check out the [API documentation](https://saavn.dev/docs) for detailed information on how to use the API.
 
-## :mag_right: Usage
+## 📰 Changelog
 
-### For usage, see [Documentation](https://docs.saavn.dev)
+For a detailed list of changes, see the [CHANGELOG](CHANGELOG.md).
 
-## :construction_worker: Local development
+## 🔌 Running Locally
 
-### Prerequisites
+1. Clone the repository:
 
-- NodeJS v14+
-- Vercel CLI : To install Vercel CLI globally use `npm i -g vercel`
+   ```sh
+   git clone https://github.com/sumitkolhe/jiosaavn-api
+   cd jiosaavn-api
+   ```
 
-### Run locally
+### Using Docker
 
-- Clone the Repo
+```sh
+docker-compose up
+```
 
-  ```sh
-  git clone https://github.com/sumitkolhe/jiosaavn-api
+OR
 
-  cd jiosaavn-api
-  ```
+### Manually
 
-- Install the dependencies
+> [!NOTE]
+> You need `Bun(1.0.29+)` or `Node.js(v20+)`
 
-  ```sh
-  npm install
-  ```
+2. Install the required dependencies:
 
-- Start development server
+   ```sh
+   bun install
+   ```
 
-  ```sh
-  npm start
-  ```
+3. Launch the development server:
 
-## ☁️ Host your own instance
+   ```sh
+   bun run dev
+   ```
+
+## ☁️ Deploying Your Own Instance
+
+JioSaavn API can be deployed to either Cloudflare Workers or Vercel. Below are the instructions for deploying to each platform.
+
+### Cloudflare Workers
+
+[![Deploy with Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/sumitkolhe/jiosaavn-api)
+
+### Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/sumitkolhe/jiosaavn-api)
 
-## Note
-
-To ensure that the API consistently respects the provided language, make sure to set the [Function region](https://vercel.com/docs/concepts/functions/serverless-functions/regions) within Vercel to `Mumbai, India (South) - bom1`.
-
 ## 📜 License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+This project is distributed under the [MIT License](https://opensource.org/licenses/MIT). For more information, see the [LICENSE](LICENSE) file included in this repository.
